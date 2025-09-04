@@ -33,7 +33,7 @@ public class Lox {
 
     private static void runPrompt() throws IOException {
         InputStreamReader input = new InputStreamReader(System.in);
-        BufferedReader reader = new BufferedReader(reader);
+        BufferedReader reader = new BufferedReader(input);
 
 
         for (;;){
@@ -48,7 +48,7 @@ public class Lox {
 
     private static void run(String source) {
         Scanner scanner = new Scanner(source);
-        List<Token> tokens = scanner.ScanTokens();
+        List<Token> tokens = scanner.scanTokens();
 
         for (Token token : tokens) {
             System.out.println(token);
