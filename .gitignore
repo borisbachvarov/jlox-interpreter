@@ -34,5 +34,8 @@ bin/
 /build/
 target/
 
+#Compiled Java classes
+*.class
+
 # Logs
 *.log
